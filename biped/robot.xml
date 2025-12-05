@@ -89,13 +89,13 @@
     <material name="tibia_material" rgba="0.917647 0.917647 0.917647 1"/>
     <material name="wheel_material" rgba="0 0 0 1"/>
   </asset>
-  <actuator>
+<actuator>
     <position class="biped2" name="femur_1" joint="femur_1" inheritrange="1"/>
     <position class="biped2" name="tibia_1" joint="tibia_1" inheritrange="1"/>
-    <position class="biped2" name="wheel_1" joint="wheel_1"/>
+    <motor name="wheel_1" joint="wheel_1" gear="1" ctrllimited="true" ctrlrange="-10 10"/>
     <position class="biped2" name="femur_2" joint="femur_2" inheritrange="1"/>
     <position class="biped2" name="tibia_2" joint="tibia_2" inheritrange="1"/>
-    <position class="biped2" name="wheel_2" joint="wheel_2"/>
-  </actuator>
+    <motor name="wheel_2" joint="wheel_2" gear="1" ctrllimited="true" ctrlrange="-10 10"/>
+</actuator>  
   <equality/>
 </mujoco>

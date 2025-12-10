@@ -1,5 +1,10 @@
 # Quickstart
-First install mujoco
+
+To run, first clone the repo
+```
+git clone https://github.com/MagnetMan103/biped_control
+```
+Then, install mujoco
 ```
 pip install mujoco
 ```
